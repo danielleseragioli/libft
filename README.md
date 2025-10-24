@@ -13,7 +13,7 @@ This project helped me strengthen my knowledge in:
 * Static libraries and compilation with Makefiles
 * Data structures and linked list management
 
-> “Build your own foundation — one function at a time.”
+> “Build your own foundation, one function at a time.”
 
 ✅ Project completed 125% successfully as part of my 42 journey.<br>
 💻 **Language:** C
