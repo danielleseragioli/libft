@@ -1,9 +1,8 @@
 # Libft
-<img align="right" height="200" width="200" src="https://spotty-grenadilla-d26.notion.site/image/attachment%3Aacb73e23-d9c7-4fb8-b226-6f2ec737067b%3Alibft_selo.png?table=block&id=296113de-b78e-80dc-a9b6-fd2e8a69586a&spaceId=d1b02b65-6f05-41fb-9868-69f5ce300038&width=300&userId=&cache=v2">
- 
+<img align="right" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXQ3Y2x5NmE1cXoxcjhtM2JzdXRrZWRmZ3pwemRydjB1bmprem93YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wjsxICjfkEUEdWHsA9/giphy.gif" width="600">
 
-**Libft** is the first project at **42 School** where you create your own C library, a personal <br> collection of essential functions that will be reused throughout your future projects.
-<br> It’s designed to deepen your understanding of standard C functions by re-implementing <br> them from scratch and expanding them with additional and bonus features.
+**Libft** is the first project at **42 School** where you create your own C library, a personal collection of essential functions that will be reused throughout your future projects.
+It’s designed to deepen your understanding <br> of standard C functions by re-implementing them from scratch and expanding them with additional and bonus features.
 
 This project helped me strengthen my knowledge in:
 
@@ -13,16 +12,13 @@ This project helped me strengthen my knowledge in:
 * Static libraries and compilation with Makefiles
 * Data structures and linked list management
 
-> “Build your own foundation, one function at a time.”
+---
 
 ✅ Project completed 125% successfully as part of my 42 journey.<br>
 💻 **Language:** C
-
-<div align="left">
- 
- ![Funny GIF](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXQ3Y2x5NmE1cXoxcjhtM2JzdXRrZWRmZ3pwemRydjB1bmprem93YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wjsxICjfkEUEdWHsA9/giphy.gif
-)
-</div>
+<br><br>
+<img src="https://github.com/leogaudin/42_project_badges/raw/main/badges/libft.webp">
+<br>
 
 ---
 ## Project Overview (Mandatory & Bonus)
