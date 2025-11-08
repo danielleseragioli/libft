@@ -1,16 +1,27 @@
 # Libft
-<img align="right" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXQ3Y2x5NmE1cXoxcjhtM2JzdXRrZWRmZ3pwemRydjB1bmprem93YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wjsxICjfkEUEdWHsA9/giphy.gif" width="600">
 
-**Libft** is the first project at **42 School** where you create your own C library, a personal collection of essential functions that will be reused throughout your future projects.
-It’s designed to deepen your understanding <br> of standard C functions by re-implementing them from scratch and expanding them with additional and bonus features.
 
-This project helped me strengthen my knowledge in:
+<img align="right" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXQ3Y2x5NmE1cXoxcjhtM2JzdXRrZWRmZ3pwemRydjB1bmprem93YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wjsxICjfkEUEdWHsA9/giphy.gif" width="650" style="margin-left: 30px; margin-bottom: 10px;">
 
-* Memory management and pointers
-* String and array manipulation
-* Function implementation and optimization
-* Static libraries and compilation with Makefiles
-* Data structures and linked list management
+<div style="max-width: 50%;">
+
+**Libft** is the first project at **42 School** where <br> 
+you create your own C library,  a personal <br> 
+collection of essential functions that will be reused throughout your future projects.  
+It’s designed to deepen your understanding 
+<br> of standard C functions by re-implementing
+<br>them  from scratch and expanding them with additional and bonus features.
+
+This project helped me strengthen my 
+<br>knowledge in:
+
+* Memory and pointer management  
+* String and array handling  
+* Function design and optimization  
+* Makefile compilation and static libraries  
+* Basic data structures (linked lists)
+
+</div>
 
 ---
 
