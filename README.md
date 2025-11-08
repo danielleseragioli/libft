@@ -12,8 +12,8 @@ be reused throughout your future projects.
 
 It’s designed to deepen your understanding 
 of standard C functions by re-implementing
-them  from scratch and expanding them with
-additional and bonus features.
+them <br>from scratch and expanding them with
+additional <br> and bonus features.
 
 This project helped me strengthen my 
 <br>knowledge in:
