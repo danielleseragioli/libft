@@ -4,18 +4,9 @@
 
 <div style="max-width: 50%;">
 
-**Libft** is the first project at **42 School** where 
-you create your own C library,
-a personal collection of essential functions that will
-be reused throughout your future projects.  
-
-It’s designed to deepen your understanding 
-of standard C functions by re-implementing
-them <br>from scratch and expanding them with
-additional <br> and bonus features.
-
-This project helped me strengthen my 
-<br>knowledge in:
+**Libft** is the first project at **42 School**, where you build your own C library by re-implementing essential standard functions from scratch and expanding them with additional features. Its purpose is to deepen your understanding
+of C fundamentals while providing a reusable foundation for future projects.
+This project helped me strengthen my knowledge in:
 
 * Memory and pointer management  
 * String and array handling  
