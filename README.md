@@ -1,5 +1,4 @@
-# Libft
-
+<img align="center" src="https://spotty-grenadilla-d26.notion.site/image/attachment%3A7f106996-bc3a-4f1e-9396-dc9ddaf038d6%3ALinkedIn_cover_-_9_(1).png?table=block&id=2ab113de-b78e-80bc-a1da-fae930e63142&spaceId=d1b02b65-6f05-41fb-9868-69f5ce300038&width=1360&userId=&cache=v2">
 
 <img align="right" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXQ3Y2x5NmE1cXoxcjhtM2JzdXRrZWRmZ3pwemRydjB1bmprem93YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wjsxICjfkEUEdWHsA9/giphy.gif" width="450" style="margin-left: 500px; margin-bottom: 10px;">
 
