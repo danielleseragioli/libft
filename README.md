@@ -28,7 +28,7 @@ This project helped me strengthen my knowledge in:
 
 The project is structured into two mandatory parts and one bonus part.
 
-### 📚 Mandatory Part (Chapters IV.2 & IV.3)
+### Mandatory Part
 
 | Category | Description | Examples (Source Functions) | External Functions Allowed |
 | :--- | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ The project is structured into two mandatory parts and one bonus part.
 | **Part 2: Iteration** | Functions that apply a specified function to each character of a string, potentially creating a new string (`strmapi`) or modifying the original (`striteri`). | `ft_strmapi`, `ft_striteri`. | `malloc` (for `ft_strmapi`). |
 | **Part 2: File Descriptor I/O** | Functions to output data to a specified file descriptor (`fd`). | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd` (with newline), `ft_putnbr_fd`. | `write`. |
 
-### ⭐ Bonus Part (Chapter V: Linked Lists)
+### ⭐ Bonus Part
 
 | Function Category | Purpose | Examples | External Functions Allowed |
 | :--- | :--- | :--- | :--- |
