@@ -6,9 +6,10 @@
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:16:44 by dseragio          #+#    #+#             */
-/*   Updated: 2025/10/13 14:59:51 by dseragio         ###   ########.fr       */
+/*   Updated: 2026/01/22 14:26:37 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)
