@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_decimalprint.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 21:21:07 by dseragio          #+#    #+#             */
-/*   Updated: 2026/01/22 15:26:37 by dseragio         ###   ########.fr       */
+/*   Created: 2025/11/05 20:56:02 by dseragio          #+#    #+#             */
+/*   Updated: 2026/01/22 15:08:29 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_fd(int n, int fd)
+int	ft_decimalprint(unsigned int nb)
 {
-	long int	nb;
-	int			len;
+	int	len;
 
 	len = 0;
-	nb = n;
-	if (nb < 0)
+	if (nb >= 10)
 	{
-		nb *= -1;
-		len += ft_putchar_fd('-', fd);
+		len += ft_decimalprint(nb / 10);
 	}
-	if (nb > 9)
-		len += ft_putnbr_fd(nb / 10, fd);
-	len += ft_putchar_fd((nb % 10) + '0', fd);
+	len += ft_putchar_fd((nb % 10) + '0', 1);
 	return (len);
 }
 
 /*
-int	main(void)
+int main(void)
 {
-	int	fd;
-
-	fd = open("test.txt", O_WRONLY);
-	ft_putnbr_fd(42, fd);
-	close(fd);
+    unsigned int num = 255;
+    printf("\nreturn --> %d\n", ft_decimalprint(num));
 }
 */

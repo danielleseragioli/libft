@@ -6,21 +6,25 @@
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 20:49:45 by dseragio          #+#    #+#             */
-/*   Updated: 2025/10/17 21:04:30 by dseragio         ###   ########.fr       */
+/*   Updated: 2026/01/22 15:30:46 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
+	if (s == NULL)
+		return (write(1, "(null)", 6), 6);
 	while (s[i])
 	{
-		write(fd, &s[i], 1);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
+	return (i);
 }
 /*
 int	main()

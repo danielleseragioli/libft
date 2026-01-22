@@ -6,7 +6,7 @@
 #    By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/20 18:37:04 by dseragio          #+#    #+#              #
-#    Updated: 2026/01/22 14:27:15 by dseragio         ###   ########.fr        #
+#    Updated: 2026/01/22 15:07:34 by dseragio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRCS = $(addprefix srcs/, ft_atoi.c ft_isascii.c ft_memcmp.c ft_putendl_fd.c ft_
 	   ft_calloc.c ft_isprint.c ft_memmove.c ft_putstr_fd.c ft_strjoin.c \
 	   ft_strncmp.c ft_tolower.c ft_isalnum.c ft_itoa.c ft_memset.c ft_split.c \
 	   ft_strlcat.c ft_strnstr.c ft_toupper.c ft_isalpha.c ft_memchr.c \
-	   ft_putchar_fd.c ft_strchr.c ft_strlcpy.c ft_strrchr.c)
+	   ft_putchar_fd.c ft_strchr.c ft_strlcpy.c ft_strrchr.c get_next_line.c \
+	   ft_decimalprint.c ft_hexprint.c ft_printf.c ft_ptrprint.c )
 
 BONUS = $(addprefix srcs/, ft_lstiter_bonus.c ft_lstadd_front_bonus.c ft_lstadd_back_bonus.c \
 		ft_lstsize_bonus.c ft_lstlast_bonus.c \

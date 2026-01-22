@@ -6,36 +6,41 @@
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 10:39:07 by dseragio          #+#    #+#             */
-/*   Updated: 2025/10/20 11:42:59 by dseragio         ###   ########.fr       */
+/*   Updated: 2026/01/22 14:51:44 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+//flag to choose which str wil be freed (1 = s1, 2 = s2, 3 = both, 0 = none)
+char	*ft_strjoin(char *s1, char *s2, int flag_free)
 {
-	int		i;
-	int		j;
-	char	*str_join;
+	char	*str;
+	size_t	i;
+	size_t	j;
 
-	i = 0;
-	j = 0;
 	if (!s1)
 		return (ft_strdup(s2));
-	if (!s2)
-		return (ft_strdup(s1));
-	str_join = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!str_join)
-		return (NULL);
-	while (s1[i])
-	{
-		str_join[i] = s1[i];
-		i++;
-	}
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!str)
+		return (free(s1), NULL);
+	i = -1;
+	while (s1[++i])
+		str[i] = s1[i];
+	j = 0;
 	while (s2[j])
-		str_join[i++] = s2[j++];
-	str_join[i] = '\0';
-	return (str_join);
+		str[i++] = s2[j++];
+	str[i] = '\0';
+	if (flag_free - 2 >= 0)
+	{
+		flag_free -= 2;
+		free(s2);
+	}
+	if (flag_free == 1)
+		free(s1);
+	return (str);
 }
+
 /*
 int	main(void)
 {

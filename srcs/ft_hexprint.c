@@ -1,42 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_hexprint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 21:21:07 by dseragio          #+#    #+#             */
-/*   Updated: 2026/01/22 15:26:37 by dseragio         ###   ########.fr       */
+/*   Created: 2025/11/05 18:38:31 by dseragio          #+#    #+#             */
+/*   Updated: 2026/01/22 15:03:25 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_fd(int n, int fd)
+int	ft_hexprint(unsigned long int nb, int caseflag)
 {
-	long int	nb;
-	int			len;
+	int	len;
 
 	len = 0;
-	nb = n;
-	if (nb < 0)
+	if (nb < 16)
 	{
-		nb *= -1;
-		len += ft_putchar_fd('-', fd);
+		len++;
+		if (caseflag == 0)
+			write(1, &"0123456789abcdef"[nb], 1);
+		else if (caseflag == 1)
+			write(1, &"0123456789ABCDEF"[nb], 1);
 	}
-	if (nb > 9)
-		len += ft_putnbr_fd(nb / 10, fd);
-	len += ft_putchar_fd((nb % 10) + '0', fd);
+	if (nb >= 16)
+	{
+		len += ft_hexprint(nb / 16, caseflag);
+		len += ft_hexprint(nb % 16, caseflag);
+	}
 	return (len);
 }
-
 /*
+#include <stdio.h>
 int	main(void)
 {
-	int	fd;
+	int num = 255;
 
-	fd = open("test.txt", O_WRONLY);
-	ft_putnbr_fd(42, fd);
-	close(fd);
+	printf("\nreturn --> %d\n",ft_hexprint(num, 1));
+	printf("\nreturn --> %d\n",ft_hexprint(num, 0));
 }
 */

@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_ptrprint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 21:21:07 by dseragio          #+#    #+#             */
-/*   Updated: 2026/01/22 15:26:37 by dseragio         ###   ########.fr       */
+/*   Created: 2025/11/05 20:39:02 by dseragio          #+#    #+#             */
+/*   Updated: 2026/01/22 15:32:20 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_fd(int n, int fd)
+int	ft_ptrprint(void *ptr)
 {
-	long int	nb;
-	int			len;
+	int	result;
 
-	len = 0;
-	nb = n;
-	if (nb < 0)
-	{
-		nb *= -1;
-		len += ft_putchar_fd('-', fd);
-	}
-	if (nb > 9)
-		len += ft_putnbr_fd(nb / 10, fd);
-	len += ft_putchar_fd((nb % 10) + '0', fd);
-	return (len);
+	result = 0;
+	if (ptr == NULL)
+		return (ft_putstr_fd("(nil)", 1));
+	else
+		result += ft_putstr_fd("0x", 1);
+	result += ft_hexprint((unsigned long int) ptr, 0);
+	return (result);
 }
-
 /*
 int	main(void)
 {
-	int	fd;
+	int n = 255;
 
-	fd = open("test.txt", O_WRONLY);
-	ft_putnbr_fd(42, fd);
-	close(fd);
+	printf("%d", ft_ptrprint(&n));
 }
 */

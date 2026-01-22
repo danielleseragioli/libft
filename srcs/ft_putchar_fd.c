@@ -6,14 +6,16 @@
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 20:23:38 by dseragio          #+#    #+#             */
-/*   Updated: 2025/10/17 21:05:33 by dseragio         ###   ########.fr       */
+/*   Updated: 2026/01/22 15:11:01 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
+	return (1);
 }
 /*
 int	main(void)

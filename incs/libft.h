@@ -6,12 +6,16 @@
 /*   By: dseragio <dseragio@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 20:05:25 by dseragio          #+#    #+#             */
-/*   Updated: 2025/10/17 20:38:47 by dseragio         ###   ########.fr       */
+/*   Updated: 2026/01/22 15:30:54 by dseragio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -56,7 +60,7 @@ char	*ft_strdup(const char *s);
 
 // String Manipulation and Allocation
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char	 *s2, int flag_free);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -66,10 +70,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	**ft_split(char const *s, char c);
 
 // File Descriptor Output Functions
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
+int		ft_putchar_fd(char c, int fd);
+int		ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int		ft_putnbr_fd(int n, int fd);
 
 //----------Bonus Part: Linked Lists---------//
 
@@ -95,5 +99,17 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 // Iteration and Mapping
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//gnl
+char	*clean_rest(char *buffer);
+char	*ft_get_line(char *buffer);
+char	*fill_line(int fd, char *rest_str);
+char	*get_next_line(int fd);
+
+//printf
+int	ft_hexprint(unsigned long int nb, int caseflag);
+int	ft_ptrprint(void *ptr);
+int	ft_decimalprint(unsigned int nb);
+int	ft_printf(const char *format, ...);
 
 #endif
